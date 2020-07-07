@@ -2,7 +2,7 @@
 const searchUrl = 'https://api.github.com/users/'
 
 function formatQueryParams(params) {
-    const queryItems = object.keys(params)
+    const queryItems = Object.keys(params)
         .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`)
     return queryItems;
 }
